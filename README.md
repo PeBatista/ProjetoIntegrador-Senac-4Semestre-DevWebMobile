@@ -1,6 +1,6 @@
-# Projeto Integrador 2: Sistema de Gestão Escolar
+# Projeto Integrador 2: Sistema de Gestão Hospitalar 
 
-Bem-vindo ao repositório do Projeto Integrador 2, onde estamos desenvolvendo um Sistema de Gestão Escolar abrangente e funcional.
+Bem-vindo ao repositório do Projeto Integrador 2, onde estamos desenvolvendo um Sistema de Gestão hospitalar abrangente e funcional.
 
 ## Link para o Projeto dentro do Figma
 
@@ -11,7 +11,7 @@ Bem-vindo ao repositório do Projeto Integrador 2, onde estamos desenvolvendo um
 
 ## Descrição do Projeto
 
-Este projeto tem como objetivo criar um sistema de gestão escolar que permita o cadastro e gerenciamento de alunos, professores, fornecedores, entre outros, de acordo com as necessidades da instituição educacional.
+Este projeto tem como objetivo criar um sistema de gestão hospitalar que permita o cadastro e gerenciamento de pacientes, doutores, medicação, entre outros, de acordo com as necessidades da instituição de saúde 
 
 ## Protótipos da Interface
 
@@ -19,9 +19,9 @@ Neste repositório, você encontrará os protótipos funcionais da interface do 
 
 - Cadastro de Pessoa Física
 - Cadastro de Pessoa Jurídica
-- Cadastro de Professores
-- Cadastro de Fornecedores
-- Cadastro de Alunos
+- Cadastro de Doutores 
+- Cadastro de Consultas 
+- Cadastro de Pacientes 
 
 Os protótipos foram criados utilizando a ferramenta Figma, refletindo fielmente o que foi modelado anteriormente.
 
@@ -44,7 +44,11 @@ Para contribuir com o projeto, siga os seguintes passos:
 Se tiver alguma dúvida ou sugestão, não hesite em entrar em contato conosco através dos seguintes meios:
 
 - Email: [pedromendoca553@gmail.com](mailto:pedromendoca553l@gmail.com)
+[math.gomesdepaula@gmail.com](mailto:math.gomesdepaula@gmail.com)
+[jhonatan-bruno@hotmail.com](mailto: jhonatan-bruno@hotmail.com)
 - GitHub: [PeBatista](https://github.com/PeBatista)
+[Mathgomes21](https://github.com/Mathgomes21)
+[jbostroski](https://Github.com/jbostroski)
 
 Vamos trabalhar juntos para tornar este projeto um sucesso!
 
