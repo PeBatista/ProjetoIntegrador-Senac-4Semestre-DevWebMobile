@@ -46,9 +46,12 @@ Se tiver alguma dúvida ou sugestão, não hesite em entrar em contato conosco a
 - Email: [pedromendoca553@gmail.com](mailto:pedromendoca553l@gmail.com)
 [math.gomesdepaula@gmail.com](mailto:math.gomesdepaula@gmail.com)
 [jhonatan-bruno@hotmail.com](mailto:jhonatan-bruno@hotmail.com)
+[abraaoisaque3@gmail.com](mailto:abraaoisaque3@gmail.com)
+
 - GitHub: [PeBatista](https://github.com/PeBatista)
 [Mathgomes21](https://github.com/Mathgomes21)
 [jbostroski](https://Github.com/jbostroski)
+[abrahamisaque](https://Github.com/abrahamisaque)
 
 Vamos trabalhar juntos para tornar este projeto um sucesso!
 
