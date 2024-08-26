@@ -1,57 +1,81 @@
-# Projeto Integrador 2: Sistema de Gestão Hospitalar 
+# 🌟 Projeto Integrador 2: Sistema de Gestão de Vacinas 🌟
 
-Bem-vindo ao repositório do Projeto Integrador 2, onde estamos desenvolvendo um Sistema de Gestão hospitalar abrangente e funcional.
+Bem-vindo ao repositório do Projeto Integrador 2, onde estamos desenvolvendo um **Sistema de Gestão de Vacinas** para facilitar a organização e o controle da carteira de vacinação dos usuários.
 
-## Link para o Projeto dentro do Figma
+## 📌 Link para o Projeto no Figma
 
-- FigmaProject: [FigmaProject](https://www.figma.com/file/PRS0xLXNDM3aNuHBNARfB6/PI---POO?type=design&node-id=0%3A1&mode=design&t=6dKz2CXJCKWjz3fy-1)
+🔗 [Acesse o projeto no Figma](https://www.figma.com/file/PRS0xLXNDM3aNuHBNARfB6/PI---POO?type=design&node-id=0%3A1&mode=design&t=6dKz2CXJCKWjz3fy-1)
 
-![UML](Casos%20de%20Uso%20Projeto%20Integrador.png)
-![Casos de Uso](UML%20Projeto%20Integrador.png)
+## 📝 Descrição do Projeto
 
-## Descrição do Projeto
+Este projeto visa a criação de um sistema de gestão hospitalar especializado na **organização e controle de vacinas**. O sistema permitirá que os usuários:
 
-Este projeto tem como objetivo criar um sistema de gestão hospitalar que permita o cadastro e gerenciamento de pacientes, doutores, medicação, entre outros, de acordo com as necessidades da instituição de saúde 
+- Cadastrem suas vacinas.
+- Consultem o histórico de vacinação.
+- Gerenciem suas informações pessoais de maneira prática e segura.
 
-## Protótipos da Interface
+## 🗂️ Estrutura das Tabelas do Banco de Dados
 
-Neste repositório, você encontrará os protótipos funcionais da interface do sistema, desenvolvidos com base nos diagramas de caso de uso elaborados na fase inicial do projeto. As jornadas incluídas nos protótipos são:
+O sistema será sustentado por três tabelas principais, conforme descrito abaixo:
 
-- Cadastro de Pessoa Física
-- Cadastro de Pessoa Jurídica
-- Cadastro de Doutores 
-- Cadastro de Consultas 
-- Cadastro de Pacientes 
+### 🧑‍⚕️ Tabela Pessoa
 
-Os protótipos foram criados utilizando a ferramenta Figma, refletindo fielmente o que foi modelado anteriormente.
+| Campo            | Tipo         | Descrição                           |
+|------------------|--------------|-------------------------------------|
+| `id_pessoa`      | INT (PK)     | Identificador único da pessoa       |
+| `nome`           | VARCHAR(255) | Nome completo do usuário            |
+| `idade`          | INT          | Idade do usuário                    |
+| `cpf`            | VARCHAR(11)  | CPF do usuário                      |
+| `endereco`       | TEXT         | Endereço completo                   |
+| `contato`        | VARCHAR(15)  | Telefone ou e-mail para contato     |
 
-## Diagramas e Documentação
+- **Descrição**: Armazena as informações básicas dos usuários, permitindo o registro e a identificação no sistema.
 
-Além dos protótipos, este repositório também inclui a documentação do projeto, que abrange os diagramas de caso de uso criados na fase anterior, todos em formato Markdown. Você pode encontrar mais informações sobre a estrutura do sistema e sua funcionalidade na documentação.
+### 💉 Tabela Vacinas
 
-## Contribuição
+| Campo            | Tipo         | Descrição                           |
+|------------------|--------------|-------------------------------------|
+| `id_vacina`      | INT (PK)     | Identificador único da vacina       |
+| `nome_vacina`    | VARCHAR(255) | Nome da vacina                      |
+| `data_aplicacao` | DATE         | Data em que a vacina foi aplicada   |
+| `lote`           | VARCHAR(50)  | Número do lote da vacina            |
+| `fabricante`     | VARCHAR(255) | Nome do fabricante da vacina        |
+| `proximo_reforco`| DATE         | Data do próximo reforço, se houver  |
+| `id_pessoa`      | INT (FK)     | Referência à pessoa que tomou a vacina |
 
-Para contribuir com o projeto, siga os seguintes passos:
+- **Descrição**: Registra todas as vacinas cadastradas, mantendo um histórico completo para cada usuário.
 
-1. Faça um fork do repositório.
-2. Clone o seu fork para a sua máquina local.
-3. Crie uma nova branch para implementar suas alterações.
-4. Faça o commit e push das suas alterações para o seu fork.
-5. Crie um pull request para que possamos revisar as suas alterações e incorporá-las ao projeto principal.
+### 🩺 Tabela Consultas
 
-## Contato
+| Campo             | Tipo         | Descrição                           |
+|-------------------|--------------|-------------------------------------|
+| `id_consulta`     | INT (PK)     | Identificador único da consulta     |
+| `data_consulta`   | DATE         | Data da consulta                    |
+| `nome_medico`     | VARCHAR(255) | Nome do médico responsável          |
+| `observacoes`     | TEXT         | Observações ou anotações relevantes |
+| `id_pessoa`       | INT (FK)     | Referência à pessoa relacionada     |
 
-Se tiver alguma dúvida ou sugestão, não hesite em entrar em contato conosco através dos seguintes meios:
+- **Descrição**: Gerencia as consultas relacionadas às vacinas, fornecendo uma visão completa das interações médicas.
 
-- Email: [pedromendoca553@gmail.com](mailto:pedromendoca553l@gmail.com)
-[math.gomesdepaula@gmail.com](mailto:math.gomesdepaula@gmail.com)
-[jhonatan-bruno@hotmail.com](mailto:jhonatan-bruno@hotmail.com)
-[abraaoisaque3@gmail.com](mailto:abraaoisaque3@gmail.com)
+## 🧠 Lógica do Sistema
 
-- GitHub: [PeBatista](https://github.com/PeBatista)
-[Mathgomes21](https://github.com/Mathgomes21)
-[jbostroski](https://Github.com/jbostroski)
-[abrahamisaque](https://Github.com/abrahamisaque)
+- **Cadastro de Usuário**: Os usuários serão registrados na *Tabela Pessoa*, com todos os dados necessários para a gestão de vacinas.
+- **Registro de Vacinas**: As vacinas aplicadas serão registradas na *Tabela Vacinas*, vinculadas ao usuário correspondente.
+- **Gestão de Consultas**: Consultas médicas serão gerenciadas na *Tabela Consultas*, permitindo o acompanhamento completo.
+- **Visualização e Relatórios**: O sistema permitirá a visualização da carteira de vacinação e a geração de relatórios detalhados.
 
-Vamos trabalhar juntos para tornar este projeto um sucesso!
+## 🛠️ Tecnologias Utilizadas
 
+- **Frontend**: [Figma](https://www.figma.com/) para prototipação e design.
+- **Backend**: Banco de dados relacional para armazenar as informações.
+- **Documentação**: Normas ABNT para garantir a padronização e clareza.
+
+## 🚀 Estrutura do Projeto
+
+O projeto está estruturado em módulos, com uma separação clara entre frontend (design e interação no Figma) e backend (gestão de dados e lógica do sistema).
+
+---
+
+Sinta-se à vontade para contribuir e ajustar conforme o andamento do projeto! Vamos construir um sistema de gestão de vacinas eficiente e impactante! 💉👩‍⚕️
+
+---
