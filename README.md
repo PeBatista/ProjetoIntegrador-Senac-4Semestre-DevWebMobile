@@ -10,9 +10,9 @@ Bem-vindo ao repositório do Projeto Integrador 2, onde estamos desenvolvendo um
 
 Este projeto visa a criação de um sistema de gestão hospitalar especializado na **organização e controle de vacinas**. O sistema permitirá que os usuários:
 
-- Cadastrem suas vacinas.
-- Consultem o histórico de vacinação.
-- Gerenciem suas informações pessoais de maneira prática e segura.
+- Cadastro de informações pessoais.
+- Gerenciamento de vacinas.
+- Histórico de vacinação.
 
 ## 🗂️ Estrutura das Tabelas do Banco de Dados
 
