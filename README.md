@@ -4,7 +4,7 @@ Bem-vindo ao repositório do Projeto Integrador 2, onde estamos desenvolvendo um
 
 ## 📌 Link para o Projeto no Figma
 
-🔗 [Acesse o projeto no Figma](https://www.figma.com/file/PRS0xLXNDM3aNuHBNARfB6/PI---POO?type=design&node-id=0%3A1&mode=design&t=6dKz2CXJCKWjz3fy-1)
+🔗 [Acesse o projeto no Figma](https://www.figma.com/design/aBpaQyQNXGCTJP15Yz7m1J/PI---4-Semestre?node-id=5-5&node-type=FRAME&t=VN8osCzAn8i8fv5P-0)
 
 ## 📝 Descrição do Projeto
 
