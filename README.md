@@ -78,4 +78,5 @@ O projeto está estruturado em módulos, com uma separação clara entre fronten
 
 Sinta-se à vontade para contribuir e ajustar conforme o andamento do projeto! Vamos construir um sistema de gestão de vacinas eficiente e impactante! 💉👩‍⚕️
 
+
 ---
