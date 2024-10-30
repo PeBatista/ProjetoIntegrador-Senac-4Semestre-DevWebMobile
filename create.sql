@@ -1,9 +1,9 @@
 -- Tabela Pessoa (com coluna de senha)
 CREATE TABLE Pessoa (
     id_pessoa INT PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
-    idade INT CHECK (idade >= 0),  -- Garantindo que a idade seja um valor n„o negativo
-    cpf VARCHAR(11) UNIQUE NOT NULL,  -- CPF deve ser ˙nico
+    nome VARCHAR(255) NULL,
+    idade INT CHECK (idade >= 0),  -- Garantindo que a idade seja um valor n√£o negativo
+    cpf VARCHAR(11) UNIQUE NULL,  -- CPF deve ser √∫nico
     endereco TEXT NOT NULL,
     contato VARCHAR(15) NOT NULL,
     senha VARCHAR(255) NOT NULL  -- Coluna de senha adicionada
@@ -12,10 +12,10 @@ CREATE TABLE Pessoa (
 -- Tabela Vacinas (com coluna de senha)
 CREATE TABLE Vacinas (
     id_vacina INT PRIMARY KEY,
-    nome_vacina VARCHAR(255) NOT NULL,
-    data_aplicacao DATE NOT NULL,
-    lote VARCHAR(50) NOT NULL,
-    fabricante VARCHAR(255) NOT NULL,
+    nome_vacina VARCHAR(255) NULL,
+    data_aplicacao DATE NULL,
+    lote VARCHAR(50) NULL,
+    fabricante VARCHAR(255) NULL,
     proximo_reforco DATE,
     id_pessoa INT,
     FOREIGN KEY (id_pessoa) REFERENCES Pessoa(id_pessoa)
@@ -24,8 +24,8 @@ CREATE TABLE Vacinas (
 -- Tabela Consultas
 CREATE TABLE Consultas (
     id_consulta INT PRIMARY KEY,
-    data_consulta DATE NOT NULL,
-    nome_medico VARCHAR(255) NOT NULL,
+    data_consulta DATE NULL,
+    nome_medico VARCHAR(255) NULL,
     observacoes TEXT,
     id_pessoa INT,
     FOREIGN KEY (id_pessoa) REFERENCES Pessoa(id_pessoa)
