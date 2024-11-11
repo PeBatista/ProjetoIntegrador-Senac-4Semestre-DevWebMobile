@@ -15,8 +15,7 @@ CREATE TABLE Vacinas (
     nome_vacina VARCHAR(255) NULL,
     data_aplicacao DATE NULL,
     lote VARCHAR(50) NULL,
-    fabricante VARCHAR(255) NULL,
-    proximo_reforco DATE);
+    fabricante VARCHAR(255) NULL);
 
 -- Tabela Consultas
 CREATE TABLE Consultas (
