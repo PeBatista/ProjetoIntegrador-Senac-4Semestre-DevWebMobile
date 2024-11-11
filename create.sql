@@ -16,10 +16,7 @@ CREATE TABLE Vacinas (
     data_aplicacao DATE NULL,
     lote VARCHAR(50) NULL,
     fabricante VARCHAR(255) NULL,
-    proximo_reforco DATE,
-    id_pessoa INT,
-    FOREIGN KEY (id_pessoa) REFERENCES Pessoa(id_pessoa)
-);
+    proximo_reforco DATE);
 
 -- Tabela Consultas
 CREATE TABLE Consultas (
@@ -28,5 +25,7 @@ CREATE TABLE Consultas (
     nome_medico VARCHAR(255) NULL,
     observacoes TEXT,
     id_pessoa INT,
-    FOREIGN KEY (id_pessoa) REFERENCES Pessoa(id_pessoa)
+    id_vacina INT,
+    FOREIGN KEY (id_pessoa) REFERENCES Pessoa(id_pessoa),
+    FOREIGN KEY (id_vacina) REFERENCES Vacinas(id_vacina)
 );
