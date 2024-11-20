@@ -2,18 +2,20 @@
 CREATE TABLE Pessoa (
     id_pessoa INT PRIMARY KEY,
     nome VARCHAR(255) NULL,
-    idade INT CHECK (idade >= 0),  -- Garantindo que a idade seja um valor não negativo
-    cpf VARCHAR(11) UNIQUE NULL,  -- CPF deve ser único
+    cpf VARCHAR(255) UNIQUE NULL,
+    cep varchar(255) null,
     endereco TEXT NOT NULL,
     contato VARCHAR(15) NOT NULL,
-    senha VARCHAR(255) NOT NULL  -- Coluna de senha adicionada
+    dt_nascimento DATE NULL,
+    cns varchar(255) null,
+    rg varchar(255) UNIQUE null,
+    senha VARCHAR(255) NOT NULL 
 );
 
 -- Tabela Vacinas (com coluna de senha)
 CREATE TABLE Vacinas (
     id_vacina INT PRIMARY KEY,
     nome_vacina VARCHAR(255) NULL,
-    data_aplicacao DATE NULL,
     lote VARCHAR(50) NULL,
     fabricante VARCHAR(255) NULL);
 
@@ -23,6 +25,7 @@ CREATE TABLE Consultas (
     data_consulta DATE NULL,
     nome_medico VARCHAR(255) NULL,
     observacoes TEXT,
+    data_aplicacao DATE NULL,
     id_pessoa INT,
     id_vacina INT,
     FOREIGN KEY (id_pessoa) REFERENCES Pessoa(id_pessoa),
