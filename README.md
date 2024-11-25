@@ -67,12 +67,71 @@ O sistema será sustentado por três tabelas principais, conforme descrito abaix
 ## 🛠️ Tecnologias Utilizadas
 
 - **Frontend**: [Figma](https://www.figma.com/) para prototipação e design.
-- **Backend**: Banco de dados relacional para armazenar as informações.
+- **Backend**: PHP com framework Laravel e banco de dados relacional MySQL.
 - **Documentação**: Normas ABNT para garantir a padronização e clareza.
 
 ## 🚀 Estrutura do Projeto
 
 O projeto está estruturado em módulos, com uma separação clara entre frontend (design e interação no Figma) e backend (gestão de dados e lógica do sistema).
+
+## Requisitos do software
+
+- PHP 8.2 ou superior.
+- Composer.
+- Banco de dados MySQL.
+
+ATENÇÃO: Não é necessário a criação prévia de nenhuma tabela no banco de dados. A criação e manipulação das tabelas, se derá pelas Migrations do Laravel. O create.sql
+presente neste projeto, é utilizado de forma ilustrativa de como os atributos foram organizados dentro das Migrations.
+
+## Como executar este software
+
+1º Preparar o ambiente
+```
+Estrutura: Instalar o Composer e XAMPP
+Banco da dados: No painel do PHPMyAdmin, criar um banco de dados chamado 'healthtrack'
+```
+
+2º Criar o arquivo .env
+```
+Duplicar o arquivo ".env.example" e renomear para ".env"
+```
+
+3º Preencher o arquivo .env
+```
+DB_HOST= {IP DO SERVIDOR ONDE ESTÁ O BANCO DE DADOS, exemplo: localhost}
+DB_PORT= {PORTA DO SERVIDOR ONDE ESTÁ O BANCO DE DADOS, exemplo: 3306}
+DB_USERNAME= {USUARIO DO BANCO DE DADOS}
+DB_PASSWORD= {SENHA DO BANCO DE DADOS}
+```
+
+4º Gerar a APP_KEY
+```
+Já na IDE, abra o console e digite o comando abaixo para criarmos a APP_KEY
+php artisan key:generate
+```
+
+5º Executar as Migrations
+```
+Ainda no console da IDE, rode o digite abaixo
+php artisan migrate
+```
+
+6º Executar as SEEDS
+```
+Ainda no console da IDE, rode o digite abaixo
+php artisan db:seed
+```
+
+7º Iniciar o projeto
+```
+Ainda no console da IDE, rode o digite abaixo
+php artisan serve
+```
+
+8º Acessar o projeto
+```
+http://127.0.0.1:8000
+```
 
 ---
 

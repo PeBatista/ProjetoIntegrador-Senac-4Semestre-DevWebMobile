@@ -1,0 +1,79 @@
+body {
+    background-color: #EBF8EC !important;
+}
+
+a {
+    text-decoration: none !important;   
+}
+
+
+input {
+    background-color: #C6F8BA !important;
+    color: #359A3C !important;
+}
+
+
+
+#navbar {
+    background-color: #EBF8EC !important;
+}
+
+.color-brand {
+    color: #359A3C !important;
+}
+
+.btn-pg-login {
+    color: #359A3C;
+    background-color: #fff;
+    border-radius: 6px;
+    width: 190px;
+}
+
+.box-vacina {
+    padding-top: 10px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    color: #359A3C !important;
+    background-color: #C6F8BA !important;
+}
+
+.app-footer {
+    margin-top: 15dvh !important;
+}
+
+.btn-menu {
+    color: #359A3C !important;
+    border: 1px solid #359A3C !important;
+    background-color: #C6F8BA !important;
+    font-size: 20px !important;
+    margin-right: 5px !important;
+}
+
+.img-logo {
+    max-width: 50%;
+}
+
+.company-name {
+    font-size: 40px;
+    color: #359A3C;
+}
+
+::placeholder {
+    color: #359A3C !important;
+    opacity: 1; /* Firefox */
+}
+  
+::-ms-input-placeholder { /* Edge 12 -18 */
+color: #359A3C !important;
+}
+
+.btn-green {
+    color: #359A3C !important;
+    background-color: #C6F8BA !important;
+    border-color: #359A3C !important;
+}
+
+.form-label {
+    color: #359A3C !important;
+}

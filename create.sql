@@ -17,17 +17,5 @@ CREATE TABLE Vacinas (
     id_vacina INT PRIMARY KEY,
     nome_vacina VARCHAR(255) NULL,
     lote VARCHAR(50) NULL,
-    fabricante VARCHAR(255) NULL);
-
--- Tabela Consultas
-CREATE TABLE Consultas (
-    id_consulta INT PRIMARY KEY,
-    data_consulta DATE NULL,
-    nome_medico VARCHAR(255) NULL,
-    observacoes TEXT,
-    data_aplicacao DATE NULL,
-    id_pessoa INT,
-    id_vacina INT,
-    FOREIGN KEY (id_pessoa) REFERENCES Pessoa(id_pessoa),
-    FOREIGN KEY (id_vacina) REFERENCES Vacinas(id_vacina)
-);
+    fabricante VARCHAR(255) NULL
+    );
